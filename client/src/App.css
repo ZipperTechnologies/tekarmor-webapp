@@ -28,6 +28,79 @@
   color: #61dafb;
 }
 
+.shirt-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.shirt-block {
+  text-align: center;
+  max-width: 500px;
+}
+
+.shirt-block img {
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.shirt-block img:hover {
+  transform: scale(1.1);
+}
+
+.shirt-name {
+  margin-top: 8px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.shirt-description {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ffff00;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #aaaaaa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
